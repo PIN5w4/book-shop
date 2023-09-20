@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header{
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.menu-bar{
+  text-align:center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.input-warning{
+  border-color:red !important;
+  background-color: #ffeeee !important;
+}
+
+.red-star:after {
+  content:" *";
+  color: red;
+}
+
+.warning{
+  color: red;
+  font-style: italic;
+}
+
+.book-item:hover , .page-link:hover ,.menu-bar,.remove-cart ,.img{
+  cursor: pointer;
+}
+
+td{
+  padding-right: 30px
+}
+
+.address-modal {
+  width: 100px;
+  height: 100px;
+}
+
+.row{
+  border:0px;
+  margin-right:0;
+  margin-left:0;
+  max-width:100%; 
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: solid 1px #888888;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #888888;
+  cursor: pointer;
+  height:'30px';
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #444444;
+  color:#cccccc;
+}
+
+@media (max-width:600px){
+  .hidden{
+    display: none;
+  }
+}
